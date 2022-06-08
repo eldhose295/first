@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MODAL, FORM CREATING</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style type="text/css">
+  	h2{
+  		text-align: center;
+  		margin-top: 8px;
+  		color: blueviolet;
+  	}
+
+  	input[type=text],input[type=email],input[type=password]{
+			width: 450px;
+			height: 30px;
+			margin-left: 10px;
+
+		}
+  	label{
+  		margin-left: 10px;
+  	}
+  	
+
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+
+  
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Application Form
+  </button>
+
+ 
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        
+         <form>
+         <h2>Login form</h2>
+         <div class="form-group">
+         <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name"  required>
+        </div>
+        <div class="form-group">
+        <label for="a1">Age:</label>
+      <input type="text" class="form-control" id="a1"  name="age"  required>
+      </div>
+      <div class="form-group">
+        <label for="a2">Email:</label>
+      <input type="email" class="form-control" id="a2" name="name"  required>
+  </div>
+      <div class="form-group">
+       <label for="a3">password:</label>
+      <input type="password" class="form-control" id="a3" name="name"  required>
+  </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Conform
+      </label>
+      
+      </div>
+        
+       
+     
+        <!-- Modal footer -->
+        
+         <button type="submit" class="btn btn-success ml-4 mb-4">Submit</button>
+          <button type="button" class="btn btn-danger mr-4 mb-4" data-dismiss="modal" style="float: right;">Close</button>
+           </form>
+       
+        
+     
+   
+  </div>
+  
+</div>
+</div>
+</div>
+</body>
+</html>
+
+        
